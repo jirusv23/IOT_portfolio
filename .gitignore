@@ -1,0 +1,52 @@
+# =========================
+# Python / MicroPython
+# =========================
+# Virtual environments (Prevents uploading your whole PC's Python environment)
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled MicroPython files (if you ever use them)
+*.mpy
+
+
+# =========================
+# VS Code / IDE
+# =========================
+# VS Code settings and local workspace configs
+.vscode/
+*.code-workspace
+
+# If you use Thonny IDE later
+.thonny/
+
+
+# =========================
+# OS Generated Files
+# =========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# =========================
+# Environment Variables / Secrets
+# =========================
+# Ignore Wi-Fi passwords or API keys if you store them in an env file
+*.env
+env.py
+secrets.py
+config.py
