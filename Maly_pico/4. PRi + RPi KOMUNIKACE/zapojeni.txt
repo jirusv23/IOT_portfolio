@@ -1,13 +1,12 @@
-po stisku tlačítka na vysilaci se na 2 vteriny rozsviti led na prijimaci 
+Funkce: Po stisku tlačítka na vysílači se na 2 vteřiny rozsvítí LED na přijímači.
 
-PRIJIMAC:
+PROPOJENÍ DESEK (UART1, Baudrate 9600):
+- GP4 (TX vysílač) -> GP5 (RX přijímač)
+- GP5 (RX vysílač) -> GP4 (TX přijímač)
+- GND vysílač       -> GND přijímač (společná zem)
 
-rezistor - GP15
-LED - rezistor + GND
-GND - GND vysilac
-GP4 - GP4 vysilac
-GP5 - GP5 vysilac
+VYSÍLAČ:
+- Tlačítko: GP14 + GND (interní PULL_UP)
 
-VYSILAC:
-
-tlacitko - GP14 + GND
+PŘIJÍMAČ:
+- LED: GP15 -> rezistor (220R) -> LED anoda -> LED katoda -> GND

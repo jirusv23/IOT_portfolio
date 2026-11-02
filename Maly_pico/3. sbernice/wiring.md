@@ -1,9 +1,16 @@
-Package
-    - upload lcd_api.py a pico_i2c_lcd.py do boardu
+# Zapojení úlohy 3 (I2C sběrnice a LCD)
 
-PIN 0 = SDA
-PIN 1 = SCL
+### Potřebné knihovny:
+Nahrát do kořene souborového systému na Pico:
+- `lcd_api.py`
+- `pico_i2c_lcd.py`
 
-1) Zapojit SDA a SCL do LCD controleru
-2) Zapojit GRN z kontroleru do MCU
-3) Zapojit VCC do MCU BUS pinu
+### I2C LCD Displej (16x2 s PCF8574 převodníkem):
+- **SDA:** GP0 (Pin 1)
+- **SCL:** GP1 (Pin 2)
+- **GND:** GND (Pin 38)
+- **VCC:** VBUS (Pin 40, napájení 5V z USB pro podsvícení a logiku displeje)
+
+### Vstupy úlohy:
+1. **Interní teplotní senzor MCU:** vestavěný v čipu RP2040 na interním kanálu ADC 4.
+2. **Fyzické tlačítko (volitelné):** GP14 (Pin 19) a GND (s interním PULL_UP).
